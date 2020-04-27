@@ -23,7 +23,7 @@ def sense(color, grid, beliefs, p_hit, p_miss):
         row = []
         for y in range(width):
             hit = (color == grid[x][y])
-            row.append( grid[x] (hit * p_hit + (1-hit) * p_miss) )
+            row.append(beliefs[x][y]* (hit * p_hit + (1-hit) * p_miss) )
         new_beliefs.append(row)
     s = sum(new_beliefs)
     for i in range(height):
