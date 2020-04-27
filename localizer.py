@@ -18,7 +18,7 @@ def initialize_beliefs(grid):
 def sense(color, grid, beliefs, p_hit, p_miss):
     new_beliefs = []
     height = len(grid)
-    width = (grid[0])
+    width = len(grid[0])
     for x in range(height):
         row = []
         for y in range(width):
